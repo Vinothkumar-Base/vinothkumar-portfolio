@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinothkumar Vijayan | Data & Business Analyst</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        darkBg: '#0f172a',
+                        cardBg: '#1e293b'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom Glowing Cursor Spotlight */
+        #cursor-glow {
+            pointer-events: none;
+            position: fixed;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, rgba(30, 41, 59, 0) 70%);
+            transition: transform 0.1s ease-out;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-blue-500 selection:text-white">
+
+    <!-- Interactive Cursor Glow Effect -->
+    <div id="cursor-glow"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-darkBg/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent">
+                VV.
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Skills & Certs</a>
+                <a href="#ethos" class="hover:text-blue-400 transition">Work Ethic</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+            </div>
+            <a href="mailto:vvk.vishnu1998@gmail.com" class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold px-4 py-2 rounded-lg transition shadow-lg shadow-blue-500/20">
+                Let's Talk
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-20 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-slate-900/0 to-transparent pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="inline-block bg-blue-500/10 text-blue-400 border border-blue-500/20 text-xs font-semibold px-3 py-1 rounded-full mb-6 uppercase tracking-wider">
+                Stamp 1G • Full Work Rights (No Sponsorship Required)[cite: 1]
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+                Hi, I'm <span class="bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-400 bg-clip-text text-transparent">Vinothkumar Vijayan</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Data & Business Analyst specializing in enterprise analytics, EMEIA stakeholder management, and AI-augmented data engineering. MSc in Business Analytics from UCC[cite: 1].
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#projects" class="bg-blue-600 hover:bg-blue-500 text-white font-medium px-6 py-3 rounded-xl transition shadow-lg shadow-blue-600/30 flex items-center gap-2">
+                    <i class="fa-solid fa-code"></i> View Projects
+                </a>
+                <a href="#contact" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-medium px-6 py-3 rounded-xl transition flex items-center gap-2">
+                    <i class="fa-solid fa-envelope"></i> Get in Touch
+                </a>
+            </div>
+            <div class="flex justify-center space-x-6 mt-12 text-slate-400">
+                <a href="https://linkedin.com/in/vinothkumarvijayan" target="_blank" class="hover:text-blue-400 transition text-xl"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Vinothkumar-Base" target="_blank" class="hover:text-blue-400 transition text-xl"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:vvk.vishnu1998@gmail.com" class="hover:text-blue-400 transition text-xl"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-slate-900/50 border-t border-slate-800/60">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-4 text-slate-300 leading-relaxed">
+                    <p>
+                        I am an analytical problem solver with an <strong>MSc in Business Analytics from University College Cork (2:1)</strong>[cite: 1] and enterprise experience spanning <strong>Apple</strong> and <strong>EY Global Delivery Services</strong>.
+                    </p>
+                    <p>
+                        My background merges rigorous quantitative methods—such as SQL, Python, Tableau, and Power BI—with high-stakes operational execution. Whether managing 400+ EMEIA partner queries at Apple or building automated reporting frameworks at EY, I bridge the gap between technical pipelines and executive decision-making.
+                    </p>
+                    <div class="pt-4 flex flex-wrap gap-3">
+                        <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1.5 rounded-md border border-slate-700">Cork, Ireland</span>
+                        <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1.5 rounded-md border border-slate-700">Open to Relocate across Ireland</span>
+                        <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1.5 rounded-md border border-slate-700">Hybrid / On-site</span>
+                    </div>
+                </div>
+                <div class="bg-cardBg p-8 rounded-2xl border border-slate-800 shadow-xl relative">
+                    <div class="absolute -top-3 -right-3 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                        Core Focus
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">What I Bring to the Table</h3>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-400 mt-1"></i> <span><strong>Enterprise Analytics:</strong> Dashboards, data modeling, DAX, and SQL database querying.</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-400 mt-1"></i> <span><strong>Stakeholder Enablement:</strong> Cross-functional coordination across EMEIA regions with high SLAs.</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-400 mt-1"></i> <span><strong>AI Integration:</strong> Building modern data apps leveraging Gemini APIs, Supabase, and Streamlit.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 border-t border-slate-800/60">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-16 text-center">Professional Experience</h2>
+            <div class="space-y-12">
+                
+                <!-- Apple Role -->
+                <div class="relative pl-8 border-l-2 border-blue-500">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-blue-500 ring-4 ring-darkBg"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white">Data Analyst</h3>
+                        <span class="text-xs font-semibold text-blue-400 bg-blue-500/10 px-3 py-1 rounded-full w-fit mt-1 sm:mt-0">Aug 2026 - Present</span>
+                    </div>
+                    <h4 class="text-sm font-medium text-slate-400 mb-4">Apple • Cork, Ireland</h4>
+                    <p class="text-slate-300 text-sm mb-4">
+                        Collaborating closely with AAR partners across the EMEIA region, resolving complex operational and data queries under strict SLAs.
+                    </p>
+                    <div class="grid sm:grid-cols-3 gap-4 mb-4">
+                        <div class="bg-cardBg p-4 rounded-xl border border-slate-800">
+                            <div class="text-2xl font-bold text-blue-400">400+</div>
+                            <div class="text-xs text-slate-400 mt-1">Queries Handled</div>
+                        </div>
+                        <div class="bg-cardBg p-4 rounded-xl border border-slate-800">
+                            <div class="text-2xl font-bold text-blue-400">76 Live</div>
+                            <div class="text-xs text-slate-400 mt-1">EMEIA Partners</div>
+                        </div>
+                        <div class="bg-cardBg p-4 rounded-xl border border-slate-800">
+                            <div class="text-2xl font-bold text-blue-400">95%</div>
+                            <div class="text-xs text-slate-400 mt-1">7-Day Closure Rate</div>
+                        </div>
+                    </div>
+                    <ul class="list-disc list-inside space-y-1.5 text-sm text-slate-300">
+                        <li>Achieved high efficiency benchmarks: 73% closure rate in 2 days, 90% in 5 days, and 95% in 7 days.</li>
+                        <li>Delivered full operational performance metrics within 3 months of joining.</li>
+                    </ul>
+                </div>
+
+                <!-- EY Role -->
+                <div class="relative pl-8 border-l-2 border-slate-700">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-700 ring-4 ring-darkBg"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white">Advanced Analyst</h3>
+                        <span class="text-xs font-semibold text-slate-400 bg-slate-800 px-3 py-1 rounded-full w-fit mt-1 sm:mt-0">Jun 2023 - Aug 2024</span>
+                    </div>
+                    <h4 class="text-sm font-medium text-slate-400 mb-4">EY Global Delivery Services • Bangalore, India</h4>
+                    <ul class="list-disc list-inside space-y-1.5 text-sm text-slate-300">
+                        <li>Built and maintained internal Power BI dashboards, reducing manual reporting workload by 50% across the team[cite: 1].</li>
+                        <li>Partnered directly with Engagement Managers and Partners on engagement lifecycles—from pricing plans and document management through executive reporting.</li>
+                        <li>Researched prospective clean-energy clients (EV, green diesel, aviation, renewable energy) and delivered actionable intelligence briefs[cite: 1].</li>
+                    </ul>
+                </div>
+
+                <!-- McDonald's Role -->
+                <div class="relative pl-8 border-l-2 border-slate-700">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-700 ring-4 ring-darkBg"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white">Area Leader (Operations)</h3>
+                        <span class="text-xs font-semibold text-slate-400 bg-slate-800 px-3 py-1 rounded-full w-fit mt-1 sm:mt-0">Nov 2024 - Aug 2026</span>
+                    </div>
+                    <h4 class="text-sm font-medium text-slate-400 mb-4">McDonald's Ireland • Cork, Ireland</h4>
+                    <ul class="list-disc list-inside space-y-1.5 text-sm text-slate-300">
+                        <li>Progressed from Crew Member to Area Leader within 15 months while completing a full-time MSc[cite: 1].</li>
+                        <li>Managed operations for a team of 15+ staff, training incoming team leads and ensuring daily compliance[cite: 1].</li>
+                    </ul>
+                </div>
+
+                <!-- Emerson Role -->
+                <div class="relative pl-8 border-l-2 border-slate-700">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-700 ring-4 ring-darkBg"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white">Project Administrator</h3>
+                        <span class="text-xs font-semibold text-slate-400 bg-slate-800 px-3 py-1 rounded-full w-fit mt-1 sm:mt-0">Nov 2020 - Mar 2022</span>
+                    </div>
+                    <h4 class="text-sm font-medium text-slate-400 mb-4">Emerson Process Management • Chennai, India</h4>
+                    <ul class="list-disc list-inside space-y-1.5 text-sm text-slate-300">
+                        <li>Managed documentation and reporting across 5 concurrent industrial projects, including 3 client packages of €110,000 each[cite: 1].</li>
+                        <li>Tracked specification sheets, drawings, and inspection test plans in SAP ERP[cite: 1].</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 bg-slate-900/50 border-t border-slate-800/60">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-4 text-center">Featured Projects</h2>
+            <p class="text-slate-400 text-center mb-16 max-w-xl mx-auto">Highlighting modern data visualization pipelines and AI-augmented applications.</p>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Project 1: Receipt Vault (AI-Powered) -->
+                <div class="bg-cardBg rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-blue-500/50 transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-blue-500/10 text-blue-400 text-xs font-semibold px-3 py-1 rounded-full">AI Data Engineering</span>
+                            <i class="fa-solid fa-receipt text-blue-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Receipt Vault (AI Ingestion Engine)</h3>
+                        <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+                            An end-to-end receipt processing pipeline featuring Telegram Bot ingestion, Gemini API for unstructured data extraction, Supabase for robust DB storage, and FastMCP to bridge database and AI queries into a Streamlit analytics dashboard.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-slate-800 text-slate-300 text-xs px-2.5 py-1 rounded">Python</span>
+                            <span class="bg-slate-800 text-slate-300 text-xs px-2.5 py-1 rounded">Gemini API</span>
+                            <span class="bg-slate-800 text-slate-300 text-xs px-2.5 py-1 rounded">Supabase</span>
+                            <span class="bg-slate-800 text-slate-300 text-xs px-2.5 py-1 rounded">Streamlit</span>
+                            <span class="bg-slate-800 text-slate-300 text-xs px-2.5 py-1 rounded">FastMCP</span>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                        <span class="text-xs text-emerald-400 font-medium flex items-center gap-1.5"><i class="fa-solid fa-circle text-[8px]"></i> Production Ready</span>
+                        <a href="https://github.com/Vinothkumar-Base" target="_blank" class="text-sm text-blue-400 hover:underline flex items-center gap-1">GitHub Repo <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Health First Dashboard -->
+                <div class="bg-cardBg rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-blue-500/50 transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-blue-500/10 text-blue-400 text-xs font-semibold px-3 py-1 rounded-full">Business Intelligence</span>
+                            <i class="fa-solid fa-chart-line text-blue-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Health First Dashboard</h3>
+                        <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+                            Comprehensive healthcare analytics dashboard developed as part of the IBM Business Analyst Professional Certification. Focuses on patient metrics, data cleansing, KPI tracking, and interactive stakeholder reporting.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-slate-800 text-slate-300 text-xs px-2.5 py-1 rounded">Google Data Studio</span>
+                            <span class="bg-slate-800 text-slate-300 text-xs px-2.5 py-1 rounded">Data Visualization</span>
+                            <span class="bg-slate-800 text-slate-300 text-xs px-2.5 py-1 rounded">IBM BA Curriculum</span>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                        <span class="text-xs text-emerald-400 font-medium flex items-center gap-1.5"><i class="fa-solid fa-circle text-[8px]"></i> Interactive Demo</span>
+                        <a href="https://datastudio.google.com/reporting/3c01215d-16ca-4114-b158-0f875d8b2ee6/page/W5hoF" target="_blank" class="text-sm text-blue-400 hover:underline flex items-center gap-1">Live Dashboard <i class="fa-solid fa-external-link text-xs"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Certifications Section -->
+    <section id="skills" class="py-24 border-t border-slate-800/60">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-16 text-center">Skills & Certifications</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Core Skills Matrix -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 text-white flex items-center gap-2"><i class="fa-solid fa-brain text-blue-400"></i> Technical Expertise</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-sm mb-1 text-slate-300">
+                                <span>SQL & Python / R</span>
+                                <span class="text-blue-400">Advanced</span>
+                            </div>
+                            <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                                <div class="bg-blue-500 h-full rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-1 text-slate-300">
+                                <span>Tableau & Power BI (DAX, Modeling)</span>
+                                <span class="text-blue-400">Advanced</span>
+                            </div>
+                            <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                                <div class="bg-blue-500 h-full rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-1 text-slate-300">
+                                <span>Excel (Power Query, Pivot Tables)</span>
+                                <span class="text-blue-400">Expert</span>
+                            </div>
+                            <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                                <div class="bg-blue-500 h-full rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-1 text-slate-300">
+                                <span>Requirements Gathering & Stakeholder Management</span>
+                                <span class="text-blue-400">Expert</span>
+                            </div>
+                            <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                                <div class="bg-blue-500 h-full rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 text-white flex items-center gap-2"><i class="fa-solid fa-certificate text-blue-400"></i> Professional Certifications</h3>
+                    <div class="space-y-4">
+                        <div class="bg-cardBg p-4 rounded-xl border border-slate-800">
+                            <div class="font-bold text-white text-sm">IBM Business Analyst Professional Certificate</div>
+                            <div class="text-xs text-blue-400 mt-1">Issued Feb 2026 • Credential ID: R2LGS6OESHR1[cite: 3]</div>
+                            <p class="text-xs text-slate-400 mt-2">Comprehensive training spanning process modeling, requirements elicitation, stakeholder engagement, and data storytelling (Health First Project).</p>
+                        </div>
+                        <div class="bg-cardBg p-4 rounded-xl border border-slate-800">
+                            <div class="font-bold text-white text-sm">Lean Six Sigma Foundations</div>
+                            <div class="text-xs text-blue-400 mt-1">Issued Sep 2025[cite: 3]</div>
+                            <p class="text-xs text-slate-400 mt-2">Process optimization, waste reduction, and structured operational quality frameworks.</p>
+                        </div>
+                        <div class="bg-cardBg p-4 rounded-xl border border-slate-800">
+                            <div class="font-bold text-white text-sm">Data Visualization & Dashboard Essentials</div>
+                            <div class="text-xs text-blue-400 mt-1">Issued Sep 2025[cite: 3]</div>
+                            <p class="text-xs text-slate-400 mt-2">Advanced dashboard design principles and interactive visual storytelling.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Ethic & Philosophy -->
+    <section id="ethos" class="py-24 bg-slate-900/50 border-t border-slate-800/60">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Work Ethic & Philosophy</h2>
+            <p class="text-slate-300 leading-relaxed text-lg mb-10 max-w-2xl mx-auto">
+                Inspired by the philosophy of builders like Jensen Huang: <span class="italic text-blue-400">"No job is beneath you."</span> Whether sweeping kitchen floors and managing rushes at McDonald's while finishing a full-time master's degree, or diving deep into EMEIA partner data queries at Apple, I believe in absolute ownership, relentless adaptability, and executing to the highest standard regardless of role or level.
+            </p>
+            <div class="inline-flex items-center gap-3 bg-blue-500/10 border border-blue-500/20 px-6 py-3 rounded-xl text-blue-400 font-medium text-sm">
+                <i class="fa-solid fa-bolt"></i> High adaptability • Quick learner • Value-driven delivery
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 border-t border-slate-800/60">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">Let's Connect</h2>
+            <p class="text-slate-400 mb-10">Open to Data & Business Analyst opportunities across Ireland and remote/hybrid setups.</p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="mailto:vvk.vishnu1998@gmail.com" class="bg-blue-600 hover:bg-blue-500 text-white font-medium px-8 py-3.5 rounded-xl transition shadow-lg shadow-blue-600/30 flex items-center gap-2">
+                    <i class="fa-solid fa-envelope"></i> vvk.vishnu1998@gmail.com
+                </a>
+                <a href="https://linkedin.com/in/vinothkumarvijayan" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-medium px-8 py-3.5 rounded-xl transition flex items-center gap-2">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800 text-center text-xs text-slate-500">
+        <p>&copy; 2026 Vinothkumar Vijayan. Built with modern web standards.</p>
+    </footer>
+
+    <!-- Interactive Cursor Script -->
+    <script>
+        const cursorGlow = document.getElementById('cursor-glow');
+        window.addEventListener('mousemove', (e) => {
+            cursorGlow.style.left = `${e.clientX}px`;
+            cursorGlow.style.top = `${e.clientY}px`;
+        });
+    </script>
+</body>
+</html>
